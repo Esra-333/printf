@@ -1,4 +1,4 @@
-#include "bootcamp.h"
+#include "main.h"
 /**
  * p_char - writes char to buffer or standard output
  * @inv: the arguments inventory with most commonly used arguments
