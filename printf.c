@@ -8,7 +8,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int a = 0, cou = 0, count;
+	int a = 0, count = 0, cou;
 	va_list args;
 
 	va_start(args, format);
@@ -18,29 +18,29 @@ int _printf(const char *format, ...)
 		return (-1);
 	while (format[a])
 	{
-		count = 0;
+		cou = 0;
 		if (format[a] == '%')
 		{
 			if (!format[a + 1] || (format[a + 1] == ' ' && !format[a + 2]))
 			{
-				cou = -1;
+				count = -1;
 				break;
 			}
-			count += get_function(format[a + 1], args);
-			if (count == 0)
-				cou += _putchar(format[a + 1]);
-			if (count == -1)
-				cou = -1;
+			cou += get_function(format[a + 1], args);
+			if (cou == 0)
+				count += _putchar(format[a + 1]);
+			if (cou == -1)
+				count = -1;
 			a++;
 		}
 		else
 		{
-			(cou == -1) ? (_putchar(format[a])) : (cou += _putchar(format[a]));
+			(count == -1) ? (_putchar(format[a])) : (count += _putchar(format[a]));
 		}
 		a++;
-		if (cou != -1)
-			cou += count;
+		if (count != -1)
+			count += cou;
 	}
 	va_end(args);
-	return (cou);
+	return (count);
 }
