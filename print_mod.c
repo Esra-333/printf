@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * print_mod - print %.
+ * print_mod - print a %.
  * @args: arguments.
  * Return: count of chars.
  */
