@@ -174,7 +174,7 @@ int width, int precision, int size)
 		}
 	}
 	return (write(1, &buffer[ind], length));
-};
+}
 
 /**
  * write_pointer - Write a memory address
