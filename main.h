@@ -6,6 +6,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+#define BUFF_SIZE 1024
+
 /**
  * struct specifiers - Struct for specifiers
  * @specifiers: Struct format
