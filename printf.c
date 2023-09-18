@@ -1,8 +1,7 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
- * _printf - print the data .
+ * _printf - print the data
  * @format: Format by specifier.
  * Return: count of chars.
  */
@@ -11,15 +10,11 @@ int _printf(const char *format, ...)
 	int a = 0, count = 0, cou;
 	va_list args;
 
-	va_start(args, format)
-		if (!format || (format[0] == '%' && !format[1]))
-		{
+	va_start(args, format);
+	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
-		}
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
-	{
 		return (-1);
-	}
 	while (format[a])
 	{
 		cou = 0;
@@ -33,7 +28,7 @@ int _printf(const char *format, ...)
 			cou += get_function(format[a + 1], args);
 			if (cou == 0)
 				count += _putchar(format[a + 1]);
-			if (cou == -1)
+			if (co == -1)
 				count = -1;
 			a++;
 		}
@@ -43,7 +38,7 @@ int _printf(const char *format, ...)
 		}
 		a++;
 		if (count != -1)
-			count += cou;
+			count += co;
 	}
 	va_end(args);
 	return (count);
