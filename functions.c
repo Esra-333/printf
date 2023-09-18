@@ -43,7 +43,7 @@ int flags, int width, int precision, int size)
 
 	if (str == NULL)
 	{
-		str = "(null)";
+		str = "(NULL)"
 		if (precision >= 6)
 			str = "      ";
 	}
