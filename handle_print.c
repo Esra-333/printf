@@ -1,8 +1,5 @@
 #include "main.h"
-<<<<<<< HEAD
-=======
 
->>>>>>> cc877fd783a550fc7317a63661fc17de1ae05938
 /**
  * handle_print - Prints an argument based on its type
  * @fmt: Formatted string in which to print the arguments.
