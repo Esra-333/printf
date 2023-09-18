@@ -18,6 +18,7 @@ int flags, int width, int precision, int size)
 
 	UNUSED(precision);
 	UNUSED(size);
+
 	if (flags & F_ZERO)
 		padd = '0';
 	buffer[i++] = c;
