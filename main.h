@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib>
+#include <limit.h>
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
