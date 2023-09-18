@@ -6,15 +6,17 @@
 #include <stdarg.h>
 
 /**
- * struct format - Struct for format
+ * struct format - Struct for specifiers
  * @specifiers: Struct format
  * @f: The function associated
  */
+
 typedef struct specifiers
 {
 	char specifiers;
 	int (*f)(va_list);
-} specifiers_t;
+}
+	specifiers_t;
 
 /*prototypes*/
 int _printf(const char *format, ...);

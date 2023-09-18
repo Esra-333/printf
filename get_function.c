@@ -1,14 +1,16 @@
 #include "main.h"
+
 /**
- * main - get function
+ * get_function - get a function
  * @con_spec: Conversion specifiers.
  * @args: arguments
  * Return: char count
  */
+
 int get_function(char con_spec, va_list args)
 {
-	int i = 0;
-	int count_fun = 0;
+	int a = 0;
+	int cou = 0;
 
 	specifiers_t spec[] = {
 		{'c', print_char},
@@ -19,16 +21,16 @@ int get_function(char con_spec, va_list args)
 		{'r', print_rev_string},
 		{0, NULL}
 	};
-	while (spec[i].specifiers)
+	while (spec[a].specifiers)
 	{
-		if (con_spec == spec[i].specifiers)
-			count_fun += spec[i].f(args);
-		i++;
+		if (con_spec == spec[a].specifiers)
+			cou += spec[a].f(args);
+		a++;
 	}
-	if (count_fun == 0)
+	if (cou == 0)
 	{
-		count_fun += _putchar('%');
-		count_fun += _putchar(con_spec);
+		cou += _putchar('%');
+		cou += _putchar(con_spec);
 	}
-	return (count_fun);
+	return (cou);
 }
