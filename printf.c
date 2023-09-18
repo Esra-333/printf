@@ -1,7 +1,8 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * _printf - print the data
+ * _printf - print the data.
  * @format: Format by specifier.
  * Return: count of chars.
  */
@@ -28,7 +29,7 @@ int _printf(const char *format, ...)
 			cou += get_function(format[a + 1], args);
 			if (cou == 0)
 				count += _putchar(format[a + 1]);
-			if (co == -1)
+			if (cou == -1)
 				count = -1;
 			a++;
 		}
@@ -38,7 +39,7 @@ int _printf(const char *format, ...)
 		}
 		a++;
 		if (count != -1)
-			count += co;
+			count += cou;
 	}
 	va_end(args);
 	return (count);
