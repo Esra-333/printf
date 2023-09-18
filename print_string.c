@@ -27,5 +27,5 @@ int print_string(va_list args)
 		cou += _putchar(str[a]);
 	}
 
-	return (cou);
+	return (cou - 1) ;
 }
