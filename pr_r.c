@@ -1,25 +1,25 @@
 #include "main.h"
 /**
- * print_rev_string - print reverses string
+ * print_rev_string - print a reverses string
  * @args: number of  Arguments
  * Return: Lenght of the print
  */
 int print_rev_string(va_list args)
 {
-	int count_fun = 0, i = 0;
+	int cou = 0, a = 0;
 	char *s = va_arg(args, char *);
 
 	if (!s)
 		s = "(null)";
-	while (s[i])
+	while (s[a])
 	{
-		i++;
+		a++;
 	}
-	while (i >= 0)
+	while (a >= 0)
 	{
-		count_fun += _putchar(s[i]);
-		i--;
+		cou += _putchar(s[a]);
+		a--;
 	}
-	count_fun--;
-	return (count_fun);
+	cou--;
+	return (cou);
 }
