@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * print_string - print string.
+ * print_string - print a string.
  * @args: argument.
  * Return: character count.
  */
