@@ -1,4 +1,4 @@
-#include <limits.h>
+#include <Limits.h>
 #include <stdio.h>
 #include <main.h>
 
@@ -12,7 +12,7 @@ int main(void)
 	int len;
 	int len1;
 	unsigned int ui;
-	void addr;
+	void *addr;
 
 	len = _printf("lets try to print sentes\n");
 	len2 = _printf("lets try to print sentes\n");
