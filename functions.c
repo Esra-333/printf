@@ -43,7 +43,7 @@ int print_string(va_list types, char buffer[],
 
 	if (str == NULL)
 	{
-		str = "(NULL)"
+		str = "(NULL)";
 		if (precision >= 6)
 			str = "      ";
 	}
