@@ -1,11 +1,12 @@
 the printf project 
+
 Evironment:
 
-Language: C
-Editor: VIM 8.1.2269
-Compiler: gcc 9.3.0
-Wall -Werror -Wextra -pedantic -std=gnu89
-Style guidelines: Betty style
+1-Language: C
+2-Editor: VIM 8.1.2269
+3-Compiler: gcc 9.3.0
+4-Wall -Werror -Wextra -pedantic -std=gnu89
+5-Style guidelines: Betty style
 
 Requirements:
 
@@ -18,6 +19,5 @@ You are not allowed to use global variables
 No more than 5 functions per file
 In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
 The prototypes of all your functions should be included in your header file called main.h
-Don’t forget to push your header file
 All your header files should be include guarded
 Note that we will not provide the _putchar function for this project
