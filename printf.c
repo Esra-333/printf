@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * _printf - Emulate the original.
+ * _printf - print the data .
  * @format: Format by specifier.
  * Return: count of chars.
  */
