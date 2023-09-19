@@ -25,7 +25,7 @@ typedef struct specifiers
 int _printf(const char *format, ...);
 int get_function(char s, va_list args);
 int _putchar(char c);
-void print_buffer(char buffer[], int *buff_ind);
+void print_buffer(char buffer[], int *buffer);
 
 /*Conversion specifiers*/
 
