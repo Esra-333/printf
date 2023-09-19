@@ -3,7 +3,7 @@
 /**
  * print_buffer - Prints the contents of the buffer
  * @buffer: Array
- * @buff_ind: Index at which to add to buffer
+ * @buff: Index at which to add to buffer
  */
 
 void print_buffer(char buffer[], int *buff)
